@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Profile Page</title>
+		<link rel="icon" type="image/png" href="assets/images/logo.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Cormorant+Garamond&family=Martel:wght@300&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+		<style type="text/css">
+			body 
+			{
+				font-family: 'Comic Neue', cursive;
+			}
+			#Logo
+			{
+				width: 70px;
+			}
+			#Brand
+			{
+				font-family: 'Comic Neue', cursive;
+				font-size: 24pt;
+			}
+			.imgpost
+			{
+				width: 160px;
+				margin: 10px;
+				border: 2px solid black;
+				box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+			}
+		</style>
+		<script type="text/javascript">
+			function upload()
+			{
+				document.getElementById('upld').click();
+			}
+		</script>
+	</head>
+	<body style="background-color: rgb(38, 159, 173); font-size: 16pt;">
+		<div style="display: block; margin-top: 2vh;">
+			<a href="Home.html" style="text-decoration: none; color: black;">
+				<table style="margin-left: 2vw;">
+					<tbody>
+						<tr>
+							<td><img src="assets/images/logo.png" alt="Logo" id="Logo"></td>
+							<td><h1 id="Brand">&nbsp;FIRE CHAT</h1></td>
+						</tr>
+					</tbody>
+				</table>
+			</a>
+		</div>
+
+		<div style="margin-top: 5vh;">
+			<table style="width: 50vw; border: 2px solid black; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,0.5); margin: auto; padding: 10px;">
+				<tbody>
+					<tr>
+						<td rowspan="3" style="width: 120px;">
+							<img src="assets/images/Image.jpg" alt="Image" class="imgpost">
+							<button style="margin-left: 10px;" onclick="upload()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Change Profile Image</button>
+							<input type="file" name="upld" style="display: none;"  id="upld">
+						</td>
+						<td>
+							<b style="margin-left: 15px;">NAME:</b> Saumya Pande with "e"
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b style="margin-left: 15px;">USERNAME:</b> Nobita
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b style="margin-left: 15px;">CONTACT:</b> +91 79730 393XX
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p style="margin-left: 10px;"><b>ABOUT:</b> I am a passionate learner and voracious coder with high ambition; have a keen interest in back-end web development; aspiring to become a good Full Stack Web Developer. I'm highly trainable and flexible regarding environment adaptability.<br> Currently looking to work in a fast-paced, cutting edge environment that promotes teamwork and integrity and foster personal and professional development.</p>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>
+							<button onclick="location.href='Edit.html';" style="margin-left: 10px;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Edit Profile Details</button>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</body>
+</html>

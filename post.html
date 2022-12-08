@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Post Page</title>
+		<link rel="icon" type="image/png" href="assets/images/logo.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=2">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Cormorant+Garamond&family=Martel:wght@300&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+		<style type="text/css">
+			body 
+			{
+				font-family: 'Comic Neue', cursive;
+			}
+			#Logo
+			{
+				width: 70px;
+			}
+			#Brand
+			{
+				font-family: 'Comic Neue', cursive;
+				font-size: 24pt;
+			}
+			.imgpost
+			{
+				width: 200px;
+				margin: 10px;
+				border: 2px solid black;
+				box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+			}
+		</style>
+		<script type="text/javascript">
+			function upload()
+			{
+				document.getElementById('upld').click();
+			}
+		</script>
+	</head>
+	<body style="background-color: rgb(181, 56, 131);">
+		<div style="display: block; margin-top: 2vh;">
+			<a href="Home.html" style="text-decoration: none; color: black;">
+				<table style="margin-left: 2vw;">
+					<tbody>
+						<tr>
+							<td><img src="assets/images/logo.png" alt="Logo" id="Logo"></td>
+							<td><h1 id="Brand">&nbsp;FIRE CHAT</h1></td>
+						</tr>
+					</tbody>
+				</table>
+			</a>
+		</div>
+
+		<div>
+			<table style="margin: auto;">
+				<tbody>
+					<tr>
+						<td>
+							<img src="assets/images/Zero.jpg" alt="Image" class="imgpost" onclick="upload()">
+							<input type="file" name="upld" style="display: none;"  id="upld">
+						</td>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+					</tr>
+					<tr>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+					</tr>
+					<tr>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+						<td><img src="assets/images/Image.jpg" alt="Image" class="imgpost"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

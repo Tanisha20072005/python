@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Page</title>
+		<link rel="icon" type="image/png" href="assets/images/logo.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=2">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Cormorant+Garamond&family=Martel:wght@300&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+		<style type="text/css">
+			#Logo
+			{
+				width: 70px;
+			}
+			#Brand
+			{
+				font-family: 'Comic Neue', cursive;
+				font-size: 24pt;
+			}
+			#FormDiv
+			{
+				background-color: ;
+				font-size: 16pt;
+				font-family: 'Comic Neue', cursive;
+
+			}
+			form 
+			{
+				width: 400px;
+				margin: auto;
+				padding: 10px;
+				border: 2px solid black;
+				border-radius: 5px;
+				background-color: rgb(255, 245, 243);
+				box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+			}
+			input
+			{
+				width: 390px;
+				height: 25px;
+			}
+			button
+			{
+				width: 398px;
+				font-size: 16pt;
+				font-family: 'Comic Neue', cursive;
+			}
+		</style>
+	</head>
+	<body style="background-color: rgb(31, 192, 183);">
+		<div style="display: block; margin-top: 10vh;">
+			<table style="margin:auto;">
+				<tbody>
+					<tr>
+						<td><img src="assets/images/logo.png" alt="Logo" id="Logo"></td>
+						<td><h1 id="Brand">&nbsp;FIRE CHAT</h1></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="FormDiv">
+			<form action="" method="GET">
+				<label><i class="fa fa-user" aria-hidden="true"></i>&nbsp;User Name</label>
+				<br>
+				<input style="margin-top: 4px; margin-bottom: 10px;" type="text" name="username" placeholder="Enter a new username" required>
+				<br>
+				<label><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact Number</label>
+				<br>
+				<input style="margin-top: 4px; margin-bottom: 10px;" type="text" name="text" placeholder="Enter a new contact number" required>
+				<br>
+				<label><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;About</label>
+				<br>
+				<input style="margin-top: 4px; margin-bottom: 10px;" type="texts" name="about" placeholder="Enter description here..." required>
+				<br>
+				<button type="submit" style="margin-bottom: 10px;" name="login" value="login" onclick="window.alert('Changes are saved successfully.')"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save Changes</button>
+				<br>
+			</form>
+		</div>
+	</body>
+</html>

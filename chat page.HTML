@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat Page</title>
+		<link rel="icon" type="image/png" href="assets/images/logo.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=2">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Cormorant+Garamond&family=Martel:wght@300&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+		<style type="text/css">
+			body 
+			{
+				font-family: 'Comic Neue', cursive;
+			}
+			#Logo
+			{
+				width: 70px;
+			}
+			#Brand
+			{
+				font-family: 'Comic Neue', cursive;
+				font-size: 24pt;
+			}
+			.NavImg
+			{
+				width: 200px;
+				border: 2px solid black;
+				box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+			}
+			.UserListBorder, .GroupListBorder
+			{
+				border: 2px solid black;
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+				width: 100%;
+				margin-top: 10px;
+			}
+			.UserProfile
+			{
+				width: 50px;
+			}
+		</style>
+	</head>
+	<body style="background-color: rgb(30, 171, 25);">
+		<div style="display: block; margin-top: 2vh;">
+			<a href="Home.html" style="text-decoration: none; color: black;">
+				<table style="margin-left: 2vw;">
+					<tbody>
+						<tr>
+							<td><img src="assets/images/logo.png" alt="Logo" id="Logo"></td>
+							<td><h1 id="Brand">&nbsp;FIRE CHAT</h1></td>
+						</tr>
+					</tbody>
+				</table>
+			</a>
+		</div>
+
+		<div>
+			<table style="margin: auto; margin-top: 5vh;">
+				<tbody>
+					<tr>
+						<!-- COLUMN 1 -->
+						<td style="height: 70vh; width: 25vw; border: 2px solid black; vertical-align: text-top; padding: 10px;">
+							
+							<!-- SEARCH BAR -->
+
+							<input type="text" name="search" placeholder="Search Users by name" style="width:90%; height: 25px;">&nbsp;<i class="fa fa-search" aria-hidden="true"></i>
+
+							<!-- USER'S LIST -->
+
+							<table class="UserListBorder">
+								<tr>
+									<td><img src="assets/images/logo.png" alt="UserProfile" class="UserProfile"></td>
+									<td><h3>&nbsp;Saumya Pande</h3></td>
+								</tr>
+							</table>
+							<table class="UserListBorder">
+								<tr>
+									<td><img src="assets/images/logo.png" alt="UserProfile" class="UserProfile"></td>
+									<td><h3>&nbsp;Tanisha Kumari</h3></td>
+								</tr>
+							</table>
+							<table class="UserListBorder">
+								<tr>
+									<td><img src="assets/images/logo.png" alt="UserProfile" class="UserProfile"></td>
+									<td><h3>&nbsp;Harsh Mehta</h3></td>
+								</tr>
+							</table>
+							<table class="UserListBorder">
+								<tr>
+									<td><img src="assets/images/logo.png" alt="UserProfile" class="UserProfile"></td>
+									<td><h3>&nbsp;Gurjyot Singh</h3></td>
+								</tr>
+							</table>
+
+							<button style="height: 25px; margin-top: 15px; width: 47%; color: white; background-color: #5cb85c; border: none;cursor: pointer!important;"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Add User</button>
+							&nbsp;
+							<button style="height: 25px; margin-top: 15px; width: 47%; color: white; background-color: #d9534f; border: none;cursor: pointer!important;"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp; &nbsp;Clear All Chats</button>
+						</td>
+
+						<!-- COLUMN 2 -->
+						<td style="height: 70vh; width: 50vw; border: 2px solid black; vertical-align: top; padding: 10px;">
+							<div style="border: 2px solid black; width: 40vw; margin-bottom: 10px; padding: 5px;">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi.
+							</div>
+							<div style="border: 2px solid black; width: 40vw; margin-bottom: 10px; padding: 5px; margin-left: 10vw;">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor..
+							</div>
+							<div style="border: 2px solid black; width: 40vw; margin-bottom: 10px; padding: 5px;">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor.
+							</div>
+							<div style="border: 2px solid black; width: 40vw; margin-bottom: 10px; padding: 5px; margin-left: 10vw;">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi.
+							</div>
+							
+							<!-- CHAT BAR -->
+
+							<input type="text" name="chat" placeholder="Press Enter button to send the message" style="width:50vw; height: 25px; position: absolute; bottom: 150px;" >							
+						</td>
+
+						<!-- COLUMN 3 -->
+						<td style="height: 70vh; width: 25vw; border: 2px solid black; vertical-align: text-top; padding: 10px;">
+							
+							<!-- SEARCH BAR -->
+
+							<input type="text" name="search" placeholder="Search Groups by name" style="width:90%; height: 25px;">&nbsp;<i class="fa fa-search" aria-hidden="true"></i>
+
+							<!-- GROUP LIST -->
+
+							<table class="GroupListBorder">
+								<tr>
+									<td><img src="assets/images/logo.png" alt="UserProfile" class="UserProfile"></td>
+									<td><h3>&nbsp;Family Times</h3></td>
+								</tr>
+							</table>
+							<table class="GroupListBorder">
+								<tr>
+									<td><img src="assets/images/logo.png" alt="UserProfile" class="UserProfile"></td>
+									<td><h3>&nbsp;University</h3></td>
+								</tr>
+							</table>
+							<table class="GroupListBorder">
+								<tr>
+									<td><img src="assets/images/logo.png" alt="UserProfile" class="UserProfile"></td>
+									<td><h3>&nbsp;Weekend Party Freaks</h3></td>
+								</tr>
+							</table>
+							<table class="GroupListBorder">
+								<tr>
+									<td><img src="assets/images/logo.png" alt="UserProfile" class="UserProfile"></td>
+									<td><h3>&nbsp;Old is Gold</h3></td>
+								</tr>
+							</table>
+
+							<button style="height: 25px; margin-top: 15px; width: 47%; color: white; background-color: #5cb85c; border: none; cursor: pointer!important;"><i class="fa fa-users" aria-hidden="true"></i>&nbsp; &nbsp;Create Group</button>
+							&nbsp;
+							<button style="height: 25px; margin-top: 15px; width: 47%; color: white; background-color: #d9534f; border: none; cursor: pointer!important;"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp; &nbsp;Delete Group</button>
+						</td>
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</body>
+</html>
